@@ -46,7 +46,7 @@ const getById = async (ctx: RouterContext, next: any) => {
 
 const updateArticle = async (ctx: RouterContext, next: any) => {
   let id = +ctx.params.id;
-  //let {title, fullText} = ctx.request.body;
+  // let {title, fullText} = ctx.request.body;
   let c: any = ctx.request.body;
   
   let result = await model.update(c,id)
