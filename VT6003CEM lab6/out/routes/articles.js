@@ -87,7 +87,7 @@ const getById = (ctx, next) => __awaiter(void 0, void 0, void 0, function* () {
 });
 const updateArticle = (ctx, next) => __awaiter(void 0, void 0, void 0, function* () {
     let id = +ctx.params.id;
-    //let {title, fullText} = ctx.request.body;
+    // let {title, fullText} = ctx.request.body;
     let c = ctx.request.body;
     let result = yield model.update(c, id);
     if (result) {
